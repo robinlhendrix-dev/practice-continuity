@@ -292,6 +292,15 @@ h1,h2,h3,.scoreboard .big,.video-title{font-weight:400}
 .consent .btn.secondary:hover{background:var(--cream);color:var(--plum)}
 .consent a{color:var(--gold)}
 
+
+/* ---------- section CTAs ---------- */
+.sec-cta{display:flex;justify-content:center;margin-top:clamp(2.5rem,5vw,4rem)}
+.sec-cta.left{justify-content:flex-start;margin-top:2rem}
+.sec-cta.faq-cta{max-width:900px;margin-left:auto;justify-content:flex-start}
+.gate .sec-cta{margin-top:clamp(4.5rem,8vw,6rem)}
+.dark .btn:hover{background:#F0B957}
+@media(max-width:430px){.sec-cta .btn{width:100%}}
+
 /* ---------- reveal ---------- */
 .js .rv{opacity:0;transform:translateY(32px);transition:opacity .9s var(--ease),transform .9s var(--ease);transition-delay:var(--d,0s)}
 .js .rv.in{opacity:1;transform:none}
@@ -412,19 +421,21 @@ h1,h2,h3,.scoreboard .big,.video-title{font-weight:400}
 
   <section class="gate">
     <div class="wrap audience-strip" aria-label="Audience journey"><div class="rv"><span class="util">01</span><strong>Recognize.</strong><p>See the problem in plain language.</p></div><div class="rv" style="--d:.12s"><span class="util">02</span><strong>Review.</strong><p>Receive three practical priorities.</p></div><div class="rv" style="--d:.24s"><span class="util">03</span><strong>Decide.</strong><p>Book a call only if the direction fits.</p></div></div>
+    <div class="wrap sec-cta"><a class="btn" href="#review" data-track="gate_review">Get A Free Review <svg class="arr" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></div>
   </section>
 
   <section class="field light" id="changes" aria-labelledby="problem-title">
     <div class="wrap">
       <div class="section-head rv"><span class="index">01 | Recognition</span><h2 id="problem-title">Continuity risks often hide inside ordinary technology</h2></div>
       <div class="recognition"><p class="intro rv">A practice can look stable while important access, knowledge, and client steps depend on one person or an aging setup.</p><div class="signal-grid"><article class="signal rv" data-n="01"><span class="signal-num">Signal 01</span><h3>Access lives in too many places</h3><p>Domains, hosting, scheduling, and email may be controlled through accounts nobody has documented.</p></article><article class="signal rv" data-n="02"><span class="signal-num">Signal 02</span><h3>The website no longer reflects the practice</h3><p>Years of experience and current services are represented by an older version of the business.</p></article><article class="signal rv" data-n="03"><span class="signal-num">Signal 03</span><h3>A vendor holds the working knowledge</h3><p>Small changes depend on the availability of someone who may not be part of the next chapter.</p></article><article class="signal rv" data-n="04"><span class="signal-num">Signal 04</span><h3>The client path has accumulated friction</h3><p>Contact, scheduling, intake, and telehealth may work, but not as one understandable experience.</p></article><article class="signal rv" data-n="05"><span class="signal-num">Signal 05</span><h3>Support is reactive</h3><p>The practice needs a person to call before a small technical issue becomes an interruption.</p></article></div></div>
+      <div class="sec-cta"><a class="btn" href="#review" data-track="recognition_review">Get A Free Review <svg class="arr" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></div>
     </div>
   </section>
 
   <section class="field video-sec" aria-labelledby="video-title">
     <div class="wrap video-layout">
       <div class="video-poster rv"><img src="images/hero.webp" alt="" width="900" height="675"><span class="play" aria-hidden="true"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M7 4.5v15a1 1 0 0 0 1.5.86l12.5-7.5a1 1 0 0 0 0-1.72L8.5 3.64A1 1 0 0 0 7 4.5z"/></svg></span><div class="wave" aria-hidden="true"><b style="--h:30%;--d:.1"></b><b style="--h:60%;--d:.7"></b><b style="--h:40%;--d:.3"></b><b style="--h:85%;--d:1.2"></b><b style="--h:55%;--d:.5"></b><b style="--h:100%;--d:.9"></b><b style="--h:45%;--d:1.5"></b><b style="--h:70%;--d:.2"></b><b style="--h:35%;--d:1.1"></b><b style="--h:90%;--d:.6"></b><b style="--h:50%;--d:1.4"></b><b style="--h:75%;--d:.4"></b><b style="--h:40%;--d:1"></b><b style="--h:65%;--d:.8"></b><b style="--h:30%;--d:1.6"></b><b style="--h:55%;--d:.15"></b><b style="--h:80%;--d:1.3"></b><b style="--h:45%;--d:.55"></b></div><h2 class="video-title" id="video-title">How to modernize without disrupting the practice</h2></div>
-      <div class="video-copy rv" style="--d:.15s"><p>A 75-second transition overview built around preservation, clear ownership, and dependable support.</p><button class="transcript-toggle" type="button" aria-expanded="false" aria-controls="transcript-practice-continuity">Read The Video Transcript</button><div class="transcript" id="transcript-practice-continuity" hidden><p>You have spent years building trust with clients, referral partners, and your community. Your technology should preserve that work, not create another responsibility.</p><p>ScaleUp inventories what you have, protects the practice identity, improves the client path, organizes access, and stays available after the transition. You do not need to learn another system or coordinate several vendors.</p><p>Request a free review and we will identify what should be preserved, what is creating avoidable friction, and what a responsible transition would involve.</p></div></div>
+      <div class="video-copy rv" style="--d:.15s"><p>A 75-second transition overview built around preservation, clear ownership, and dependable support.</p><button class="transcript-toggle" type="button" aria-expanded="false" aria-controls="transcript-practice-continuity">Read The Video Transcript</button><div class="transcript" id="transcript-practice-continuity" hidden><p>You have spent years building trust with clients, referral partners, and your community. Your technology should preserve that work, not create another responsibility.</p><p>ScaleUp inventories what you have, protects the practice identity, improves the client path, organizes access, and stays available after the transition. You do not need to learn another system or coordinate several vendors.</p><p>Request a free review and we will identify what should be preserved, what is creating avoidable friction, and what a responsible transition would involve.</p></div><div class="sec-cta left"><a class="btn" href="#review" data-track="video_review">Get A Free Review <svg class="arr" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></div></div>
     </div>
   </section>
 
@@ -436,6 +447,7 @@ h1,h2,h3,.scoreboard .big,.video-title{font-weight:400}
         <svg class="mech-path" viewBox="0 0 1000 300" preserveAspectRatio="none" aria-hidden="true"><path d="M20 280 C 200 280, 220 215, 380 215 S 560 150, 640 150 S 820 70, 980 70"/></svg>
         <article class="step rv"><span class="num" aria-hidden="true"></span><h3>Inventory</h3><p>Document the website, domain, tools, access, vendors, and client-facing steps.</p></article><article class="step rv" style="--d:.1s"><span class="num" aria-hidden="true"></span><h3>Preserve</h3><p>Protect the practice identity, useful content, working tools, and referral relationships.</p></article><article class="step rv" style="--d:.2s"><span class="num" aria-hidden="true"></span><h3>Modernize</h3><p>Replace only the friction that makes access, scheduling, or maintenance harder.</p></article><article class="step rv" style="--d:.3s"><span class="num" aria-hidden="true"></span><h3>Support</h3><p>Leave clear ownership, documentation, and a dependable person for future changes.</p></article>
       </div>
+      <div class="sec-cta"><a class="btn" href="#review" data-track="path_review">Get A Free Review <svg class="arr" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></div>
     </div>
   </section>
 
@@ -444,7 +456,7 @@ h1,h2,h3,.scoreboard .big,.video-title{font-weight:400}
       <article class="review-card rv">
         <span class="badge">Free written review</span>
         <h3 id="review-value-title">Your free review creates a continuity snapshot</h3>
-        <ul><li>What must be preserved?</li><li>Where is access or ownership unclear?</li><li>What should change now, later, or not at all?</li></ul>
+        <ul><li>What must be preserved?</li><li>Where is access or ownership unclear?</li><li>What should change now, later, or not at all?</li></ul><div class="sec-cta left"><a class="btn" href="#review" data-track="review_card_review">Get A Free Review <svg class="arr" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></div>
       </article>
       <aside class="scoreboard rv" style="--d:.15s">
         <p class="note">What you receive before a sales decision</p>
@@ -474,6 +486,7 @@ h1,h2,h3,.scoreboard .big,.video-title{font-weight:400}
 
         <article class="service rv" style="--d:.08s"><div class="viz"><svg class="sv" viewBox="0 0 300 170" aria-hidden="true"><circle class="b" cx="150" cy="86" r="66"/><circle class="w" cx="150" cy="86" r="48"/><circle class="o" cx="150" cy="86" r="30"/><circle class="g" cx="150" cy="86" r="12"/><path class="sp" d="M150 86L236 22"/><path class="sp" d="M236 22l-4 20M236 22l-20 4"/><rect class="p" x="28" y="40" width="64" height="40" rx="10"/><rect class="g" x="40" y="52" width="30" height="6" rx="3"/><rect class="b" x="40" y="64" width="40" height="6" rx="3"/><rect class="pm" x="214" y="104" width="64" height="40" rx="10"/><rect class="g" x="226" y="116" width="30" height="6" rx="3"/><rect class="b" x="226" y="128" width="40" height="6" rx="3"/></svg></div><div class="meta"><span class="tag">07</span><strong>Paid ads</strong></div><h3>Google and Facebook campaigns connected to the same client path.</h3></article>
       </div>
+      <div class="sec-cta"><a class="btn" href="#review" data-track="services_review">Get A Free Review <svg class="arr" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></div>
     </div>
   </section>
 
@@ -511,7 +524,7 @@ h1,h2,h3,.scoreboard .big,.video-title{font-weight:400}
   <section class="field light" aria-labelledby="faq-title">
     <div class="wrap">
       <div class="section-head rv"><span class="index">04 | Questions</span><h2 id="faq-title">Know what happens before you choose a time.</h2></div>
-      <div class="faq-list rv"><details><summary>Will modernization erase what clients recognize?</summary><p>No. The first step is identifying what should be preserved before recommending any change.</p></details><details><summary>Do I need to learn new software?</summary><p>The goal is to reduce your technical burden. Any recommended change must have a clear owner and support path.</p></details><details><summary>What happens after I request the review?</summary><p>You can choose a working-session time immediately. The conversation begins with what must remain stable.</p></details></div>
+      <div class="faq-list rv"><details><summary>Will modernization erase what clients recognize?</summary><p>No. The first step is identifying what should be preserved before recommending any change.</p></details><details><summary>Do I need to learn new software?</summary><p>The goal is to reduce your technical burden. Any recommended change must have a clear owner and support path.</p></details><details><summary>What happens after I request the review?</summary><p>You can choose a working-session time immediately. The conversation begins with what must remain stable.</p></details></div><div class="sec-cta faq-cta"><a class="btn" href="#review" data-track="faq_review">Get A Free Review <svg class="arr" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></div>
     </div>
   </section>
 </main>
